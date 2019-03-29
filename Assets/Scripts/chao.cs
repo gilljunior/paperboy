@@ -13,7 +13,5 @@ public class chao : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(new Vector2( - 0.5f * Time.deltaTime, 0));
-        transform.Rotate(new Vector3( 0, 0, -0.5f * Time.deltaTime));
     }
 }

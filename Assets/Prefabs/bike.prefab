@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2180636225508088826}
   - component: {fileID: 7024545571117125771}
-  - component: {fileID: 3843391646270925005}
-  - component: {fileID: 5820264527641397211}
-  - component: {fileID: 3280649838626771942}
   - component: {fileID: 3280649838626771943}
-  - component: {fileID: 2000477811562232830}
+  - component: {fileID: 7590519946450854438}
+  - component: {fileID: 3280649838626771944}
+  - component: {fileID: 3280649838626771945}
+  - component: {fileID: 3280649838626771942}
   m_Layer: 0
   m_Name: bike
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 3280649838626771941}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.21470231, y: -2.06, z: 0}
-  m_LocalScale: {x: 3.55, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5a494a389b266894d9db90e3f66aec09, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d0b450748a4314647b157b198f86d7b6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &3843391646270925005
+--- !u!50 &3280649838626771943
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -105,8 +105,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &5820264527641397211
-BoxCollider2D:
+--- !u!60 &7590519946450854438
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -122,16 +122,108 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 3.09, y: 2.8}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!235 &3280649838626771942
+  m_Points:
+    m_Paths:
+    - - {x: 0.085, y: -1.1899999}
+      - {x: 0.125, y: -1.05}
+      - {x: 0.125, y: -0.91999996}
+      - {x: 0.225, y: -0.87}
+      - {x: 0.575, y: -0.53999996}
+      - {x: 0.765, y: -0.29}
+      - {x: 0.965, y: -0.14}
+      - {x: 0.995, y: -0.22}
+      - {x: 1.115, y: -0.42999998}
+      - {x: 1.3249999, y: -0.91999996}
+      - {x: 1.415, y: -1.12}
+      - {x: 1.485, y: -1.15}
+      - {x: 1.545, y: -1.1}
+      - {x: 1.545, y: -1.01}
+      - {x: 1.4449999, y: -0.75}
+      - {x: 1.3349999, y: -0.45999998}
+      - {x: 1.265, y: -0.25}
+      - {x: 1.265, y: -0.14999999}
+      - {x: 1.1949999, y: 0.11}
+      - {x: 1.0849999, y: 0.41}
+      - {x: 1.035, y: 0.48}
+      - {x: 1.095, y: 0.55}
+      - {x: 1.125, y: 0.62}
+      - {x: 1.145, y: 0.68}
+      - {x: 1.115, y: 0.78}
+      - {x: 1.045, y: 0.90999997}
+      - {x: 0.91499996, y: 1.25}
+      - {x: 0.825, y: 1.38}
+      - {x: 0.765, y: 1.4}
+      - {x: 0.60499996, y: 1.4}
+      - {x: 0.515, y: 1.29}
+      - {x: 0.525, y: 1.18}
+      - {x: 0.60499996, y: 1.06}
+      - {x: 0.755, y: 1.06}
+      - {x: 0.79499996, y: 1}
+      - {x: 0.92499995, y: 0.66999996}
+      - {x: 0.805, y: 0.55}
+      - {x: 0.805, y: 0.45999998}
+      - {x: 0.85499996, y: 0.17999999}
+      - {x: 0.675, y: 0.089999996}
+      - {x: 0.585, y: 0.01}
+      - {x: 0.435, y: -0.14}
+      - {x: 0.33499998, y: -0.11}
+      - {x: 0.21499999, y: -0.08}
+      - {x: 0.114999995, y: -0.06}
+      - {x: -0.375, y: 0}
+      - {x: -0.42499998, y: 0.099999994}
+      - {x: -0.465, y: 0.25}
+      - {x: -0.355, y: 0.26}
+      - {x: -0.044999998, y: 0.28}
+      - {x: -0.015, y: 0.32999998}
+      - {x: -0.005, y: 0.39}
+      - {x: -0.085, y: 0.48999998}
+      - {x: -0.655, y: 0.48999998}
+      - {x: -0.805, y: 0.52}
+      - {x: -0.92499995, y: 0.51}
+      - {x: -0.98499995, y: 0.47}
+      - {x: -1.035, y: 0.41}
+      - {x: -1.025, y: 0.31}
+      - {x: -0.84499997, y: 0.19999999}
+      - {x: -0.73499995, y: 0.19999999}
+      - {x: -0.635, y: 0.21}
+      - {x: -0.575, y: -0.12}
+      - {x: -0.635, y: -0.13}
+      - {x: -0.875, y: -0.26999998}
+      - {x: -1.105, y: -0.48}
+      - {x: -1.295, y: -0.66999996}
+      - {x: -1.405, y: -0.78999996}
+      - {x: -1.545, y: -0.94}
+      - {x: -1.545, y: -1.16}
+      - {x: -1.495, y: -1.22}
+      - {x: -1.405, y: -1.23}
+      - {x: -0.97499996, y: -1.26}
+      - {x: -0.675, y: -1.28}
+      - {x: -0.39499998, y: -1.31}
+      - {x: -0.114999995, y: -1.36}
+      - {x: -0.065, y: -1.4}
+      - {x: 0.195, y: -1.4}
+      - {x: 0.225, y: -1.38}
+      - {x: 0.235, y: -1.27}
+      - {x: 0.195, y: -1.23}
+    - - {x: -0.655, y: -1.1899999}
+      - {x: -0.655, y: -1.17}
+      - {x: -1.0649999, y: -1.14}
+      - {x: -1.3149999, y: -1.14}
+    - - {x: -1.165, y: -0.96}
+      - {x: -1.155, y: -0.95}
+      - {x: -1.095, y: -0.94}
+      - {x: -1.105, y: -0.95}
+    - - {x: -1.2149999, y: -0.85999995}
+      - {x: -1.115, y: -0.76}
+      - {x: -0.515, y: -0.29999998}
+      - {x: -0.465, y: -0.53999996}
+--- !u!235 &3280649838626771944
 WheelJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,17 +237,17 @@ WheelJoint2D:
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0.32, y: -1.51}
+  m_Anchor: {x: -1.44, y: -1.2}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_Suspension:
     m_DampingRatio: 0.7
-    m_Frequency: 2
+    m_Frequency: 5
     m_Angle: 90
   m_UseMotor: 0
   m_Motor:
-    m_MotorSpeed: 0
+    m_MotorSpeed: -2000
     m_MaximumMotorForce: 10000
---- !u!235 &3280649838626771943
+--- !u!235 &3280649838626771945
 WheelJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,30 +257,35 @@ WheelJoint2D:
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 987466734511221551, guid: c2ee01edd7827d449b7ac2498e2170af,
-    type: 3}
+  m_ConnectedRigidBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: 0}
+  m_Anchor: {x: 1.45, y: -1.24}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_Suspension:
     m_DampingRatio: 0.7
-    m_Frequency: 2
+    m_Frequency: 5
     m_Angle: 90
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
-    m_MotorSpeed: 0
+    m_MotorSpeed: -2000
     m_MaximumMotorForce: 10000
---- !u!114 &2000477811562232830
-MonoBehaviour:
+--- !u!255 &3280649838626771942
+FixedJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3280649838626771941}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b76f3623d2b34764ba6dd855b41b41db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: -0.7114422, y: -2.1515808}
+  m_DampingRatio: 0
+  m_Frequency: 0

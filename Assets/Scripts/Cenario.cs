@@ -5,6 +5,7 @@ using UnityEngine;
 public class Cenario : MonoBehaviour
 {
     public float velocidade = 0.1f;
+    public Rigidbody2D bike;
     public Renderer cenario;
 
     // Start is called before the first frame update
@@ -17,7 +18,7 @@ public class Cenario : MonoBehaviour
     void Update()
     {
 
-        Vector2 offset = new Vector2(velocidade * Time.deltaTime, 0);
+        Vector2 offset = new Vector2((bike.velocity.x *Time.deltaTime / 30), 0);
         cenario.material.mainTextureOffset += offset;
 
     }
